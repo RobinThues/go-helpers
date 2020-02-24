@@ -1,4 +1,4 @@
-package main
+package helpers
 
 func CompareIntSlices(a, b []int) bool {
 	if len(a) != len(b) {
@@ -10,5 +10,6 @@ func CompareIntSlices(a, b []int) bool {
 			return false
 		}
 	}
+
 	return true
 }
