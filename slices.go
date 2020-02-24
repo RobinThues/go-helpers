@@ -1,6 +1,6 @@
 package main
 
-func compareIntSlices(a, b []int) bool {
+func CompareIntSlices(a, b []int) bool {
 	if len(a) != len(b) {
 		return false
 	}

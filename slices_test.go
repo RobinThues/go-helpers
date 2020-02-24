@@ -5,17 +5,17 @@ import "testing"
 func TestCompareIntSlices(t *testing.T) {
 	a := []int{1, 2}
 	b := []int{0}
-	if compareIntSlices(a, b) != false {
-		t.Errorf("compareMemories(a, b) = %v; want %v", compareIntSlices(a, b), false)
+	if CompareIntSlices(a, b) != false {
+		t.Errorf("compareMemories(a, b) = %v; want %v", CompareIntSlices(a, b), false)
 	}
 
 	b = []int{0, 2}
-	if compareIntSlices(a, b) != false {
-		t.Errorf("compareMemories(a, b) = %v; want %v", compareIntSlices(a, b), false)
+	if CompareIntSlices(a, b) != false {
+		t.Errorf("compareMemories(a, b) = %v; want %v", CompareIntSlices(a, b), false)
 	}
 
 	b = []int{1, 2}
-	if compareIntSlices(a, b) != true {
-		t.Errorf("compareMemories(a, b) = %v; want %v", compareIntSlices(a, b), true)
+	if CompareIntSlices(a, b) != true {
+		t.Errorf("compareMemories(a, b) = %v; want %v", CompareIntSlices(a, b), true)
 	}
 }
